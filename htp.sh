@@ -35,6 +35,7 @@ function chk_depen(){
 		sleep 1
 	else
 		printf "\t ${BL}[!] ${NT}Checking Guns ..........\n"
+		echo ""
 		touch dependencies.conf
 		echo "# 4WSec And They Niggas Just Dropped Yo Printer" >> dependencies.conf
 		sleep 1
