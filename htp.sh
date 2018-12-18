@@ -39,15 +39,6 @@ function chk_depen(){
 		touch dependencies.conf
 		echo "# 4WSec And They Niggas Just Dropped Yo Printer" >> dependencies.conf
 		sleep 1
-		curl -h > /dev/null 2>&1
-		if [[ $? -eq 0 ]]; then
-			printf "\t ${YW}cURL ${NT}.......... ${GR}[✔]\n"
-			echo "curl = yes" >> dependencies.conf
-		else
-			printf "\t ${YW}cURL ${NT}.......... ${RD}[✘]\n"
-			sleep 1
-			apt-get install curl -y
-		fi
 		proxychains > /dev/null 2>&1
 		if [[ $? -eq 0 ]]; then
 			printf "\t ${YW}Proxychains ${NT}.......... ${GR}[✔]\n"
